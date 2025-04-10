@@ -4,6 +4,18 @@ Turn your Linux system into a fully-configured, sleek, and modern on-device AI d
 
 Radicle: `rad://z2ELVemM12PrcCMfi7dQCTHfsWPNh`
 
+### 2025-04 Changelog Summary:
+
+- **Feature Enhancements:**
+  - Enhanced GPU support with automatic CUDA version detection and installation.
+  - Expanded AI/ML library selection with the inclusion of Transformers and Hugging Face libraries.
+  - Added support for PyTorch 2.2.1 and CUDA 12.1.
+- **Package Updates:**
+  - Updated TensorFlow to version 2.15.0.
+  - Updated CUDA Driver to version 535.
+- **Distribution Support:**
+  - Extended support to include Debian 12 and Fedora 39.
+
 ## Overview
 
 ODA is a comprehensive setup script that transforms a fresh Linux installation into a complete AI development environment. It automates the installation and configuration of essential tools, libraries, and environments commonly used in AI development.
@@ -12,7 +24,7 @@ ODA is a comprehensive setup script that transforms a fresh Linux installation i
 
 - One-command setup
 - Command-line options for flexible installation
-- Enhanced logging system with multiple levels
+- Robust logging system with multiple levels
 - Automatic distribution detection and configuration (Ubuntu, Debian, RedHat, Fedora, CentOS)
 - Configuration backup and resume capability
 - Essential development tools
@@ -75,11 +87,14 @@ source ~/.oda-venv/bin/activate
 - System essentials (git, curl, build tools)
 - Python 3.10 with virtual environment
 - Version-pinned AI/ML libraries:
-  - PyTorch 2.1.0
-  - TensorFlow 2.14.0
+  - PyTorch 2.2.1
+  - TensorFlow 2.15.0
+  - CUDA 12.1
   - NumPy 1.24.3
   - pandas 2.1.1
   - scikit-learn 1.3.1
+  - Transformers
+  - Hugging Face libraries
 - llama.cpp with CUDA support (when GPU available)
 - Docker and NVIDIA Container Toolkit
 - Development tools (VS Code)
@@ -88,12 +103,17 @@ source ~/.oda-venv/bin/activate
 
 ## Requirements
 
+### Updated Requirements
+
+#### Supported Distributions
+- Ubuntu 20.04 LTS, 22.04 LTS, or newer
+- Debian 11, 12, or newer
+- Red Hat Enterprise Linux 8, 9, or newer
+- Fedora 38, 39, or newer
+- CentOS Stream 8, 9, or newer
+- Rocky Linux 8, 9, or newer
+- AlmaLinux 8, 9, or newer
 ### Supported Distributions
-- Ubuntu 20.04 LTS or newer
-- Red Hat Enterprise Linux 8 or newer
-- CentOS 8 or newer
-- Rocky Linux 8 or newer
-- AlmaLinux 8 or newer
 
 ### System Requirements
 - Internet connection

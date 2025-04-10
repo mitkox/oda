@@ -1,0 +1,16 @@
+tensorflow==2.14.0
+onnx
+onnxruntime-gpu
+torch==2.1.0
+torchvision
+torchaudio
+mediapipe
+mlperf-inference
+neural-compressor
+torch2trt
+tensorflow-model-optimization
+mxnet
+paddlepaddle-gpu
+tritonclient[all]
+tflite-runtime
+mlir
