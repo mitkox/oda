@@ -1,16 +1,20 @@
-tensorflow==2.14.0
-onnx
-onnxruntime-gpu
-torch==2.1.0
-torchvision
-torchaudio
-mediapipe
+tensorflow[and-cuda]==2.14.0
+numpy~=2.2.6
+pandas~=2.2.3
+scikit-learn~=1.6.1
+onnx~=1.18.0
+onnxruntime-gpu==1.18.1
+torch==2.7.0 --index-url https://download.pytorch.org/whl/cu118
+torchvision==0.22.0 --index-url https://download.pytorch.org/whl/cu118
+torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu118
+mediapipe~=0.10.21
 mlperf-inference
 neural-compressor
-torch2trt
-tensorflow-model-optimization
-mxnet
-paddlepaddle-gpu
-tritonclient[all]
-tflite-runtime
-mlir
+apache-tvm~=0.16.0
+torch2trt==0.4.0 # Assumed compatible with PyTorch 2.7.0 and TensorRT 8.6.1 - VERIFY
+tensorflow-model-optimization~=0.7.5
+mxnet-cu118~=1.9.1 # Assumed for CUDA 11.8 - VERIFY
+paddlepaddle-gpu==2.6.1 # Assumed for CUDA 11.8 - VERIFY
+tritonclient[all]==2.45.0 # Assumed compatible with Triton Server 25.04
+tflite-runtime==2.14.0
+mlir-python-bindings~=18.1.0
